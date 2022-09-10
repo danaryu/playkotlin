@@ -2,13 +2,14 @@
 kotlin docs 예제 줍줍 &amp;&amp; kotlin 강의 예제 따라가기
 
 ### Kotlin in action
+* kotlin in action example
 
 ### Kotlin docs
-* kotlinlang docs/
+* kotlinlang docs
   * https://kotlinlang.org/docs/getting-started.html
 
 ### Kotlin Starterguide (inflearn)
-* java-to-kotlin-starter
+* java-to-kotlin-starter 
   * https://www.inflearn.com/course/java-to-kotlin
 
 ### Kotlin + SpringBoot + jpa (inflearn)
