@@ -1,6 +1,7 @@
 package com.group.libraryapp.dto.user.request;
 
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public class UserUpdateRequest {
 
@@ -12,6 +13,7 @@ public class UserUpdateRequest {
     this.name = name;
   }
 
+  @Nullable
   public long getId() {
     return id;
   }

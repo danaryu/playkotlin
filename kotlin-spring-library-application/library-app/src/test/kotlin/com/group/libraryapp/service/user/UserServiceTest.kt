@@ -40,7 +40,10 @@ class UserServiceTest @Autowired constructor (
     @Test
     fun getUsersTest() {
         //given
-        userRepository.saveAll(listOf(User("danadot", null), User("mipong", 2)))
+        userRepository.saveAll(listOf(
+            User("danadot", null),
+            User("mipong", 2)
+        ))
 
         //when
         val results = userService.getUsers()
@@ -57,7 +60,7 @@ class UserServiceTest @Autowired constructor (
         val savedUser = userRepository.save(user)
 
         // when
-        userService.updateUserName(UserUpdateRequest(savedUser.id, "meepong"))
+        userService.updateUserName(UserUpdateRequest(savedUser.id!!, "meepong"))
 
         // then
         assertEquals(userRepository.findById(savedUser.id).get().name, "meepong")

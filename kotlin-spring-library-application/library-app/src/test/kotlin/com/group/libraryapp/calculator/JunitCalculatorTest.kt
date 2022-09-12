@@ -20,12 +20,15 @@ class JunitCalculatorTest {
         //then
         assertThat(calculator.number).isEqualTo(8)
     }
+/*
 
     @Test
     fun addTest_byDataClass() {
-        /**
+        */
+/**
          * Kotlin의 Data class는  toString(), hashCode(), equals(), copy()를 자동으로 생성해준다.
-         */
+         *//*
+
         //given
         val calculator = Calculator(5)
 
@@ -51,10 +54,12 @@ class JunitCalculatorTest {
 
     @Test
     fun addTest_byBackingProperties() {
-        /**
+        */
+/**
          * Backing Properties를 통해 custom getter 생성
          * Setter는 막혀있다!
-         */
+         *//*
+
         //given
         val calculator = Calculator(5)
 
@@ -64,6 +69,7 @@ class JunitCalculatorTest {
         //then
         assertThat(calculator.number).isEqualTo(8)
     }
+*/
 
     @Test
     fun minusTest() {

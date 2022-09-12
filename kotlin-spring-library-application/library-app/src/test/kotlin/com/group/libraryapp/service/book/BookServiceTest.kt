@@ -8,7 +8,6 @@ import com.group.libraryapp.domain.user.loanhistory.UserLoanHistoryRepository
 import com.group.libraryapp.dto.book.request.BookLoanRequest
 import com.group.libraryapp.dto.book.request.BookRequest
 import com.group.libraryapp.dto.book.request.BookReturnRequest
-import com.group.libraryapp.service.user.UserService
 import org.assertj.core.api.AssertionsForInterfaceTypes.assertThat
 import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.Assertions.assertEquals
@@ -20,7 +19,6 @@ import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
 class BookServiceTest @Autowired constructor(
-    private val userService: UserService,
     private val bookService: BookService,
     private val bookRepository: BookRepository,
     private val userRepository: UserRepository,
